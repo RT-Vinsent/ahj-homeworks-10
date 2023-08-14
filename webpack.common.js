@@ -52,6 +52,18 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.(mp4|webm|ogg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'videos', // Путь к папке назначения для скопированных видеофайлов
+              name: '[name].[ext]' // Имя сохраняемого файла
+            }
+          }
+        ]
+      }
     ],
   },
   plugins: [
