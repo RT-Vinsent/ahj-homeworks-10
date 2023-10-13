@@ -1,5 +1,6 @@
 /* eslint-disable object-curly-newline */
 import videoOne from '../video/videoOne.mp4'; // ссылка на видео
+import aerials from '../video/System_Of_A_Down-Aerials.mp4'; // ссылка на видео
 import audioOne from '../audio/levoe-uho-pravoe-uho-centr.mp3'; // ссылка на аудио
 
 export default class TimelineMemory {
@@ -14,6 +15,7 @@ export default class TimelineMemory {
       { date: '04.08.2023 16:18:22', body: 'это текст сообщения 1', geo: '[51.312312, -0.12321]', type: 'text' },
       { date: '08.08.2023 20:22:26', body: videoOne, geo: '[55.312312, -0.12321]', type: 'video' },
       { date: '12.08.2023 17:19:23', body: audioOne, geo: '[52.312312, -0.12321]', type: 'audio' },
+      { date: '13.10.2023 20:22:26', body: aerials, geo: '[55.312312, -0.12321]', type: 'video' },
     ];
 
     if (this.data.length === 0) {
